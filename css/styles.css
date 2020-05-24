@@ -1,0 +1,249 @@
+*{
+     margin: 0;
+     padding: 0;
+     font-family: 'Crimson Text', serif;
+     box-sizing: border-box;
+}
+a{
+     text-decoration: none;
+     color: #fff;
+}
+li{
+     list-style: none;
+}
+.cabecera{
+     width: 100vw;
+}
+.cabecera__barra{
+     display: flex;
+     width: 100%;
+     background: #000;
+     justify-content: space-around;
+     align-items: center;
+     height: 5vh;
+}
+.barra__menu{
+     flex-basis: 85%;
+}
+.barra__login{
+     flex-basis: 15%;
+     display: flex;
+     justify-content: space-around;
+}
+.menu__ul{
+     display: flex;
+}
+.menu__icon{
+     margin-left: 10px;
+     margin-right: 5px;
+}
+
+/*Nav*/
+.cabecera__nav{
+     background: rgba(163, 119, 15, 0.61);
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+.logo{
+     flex-basis:40%;
+     margin-left: 10px;
+     font-size: 30px;
+     
+}
+.logo p{
+     font-family: 'Dancing Script', cursive;
+}
+.nav__ul{
+     display: flex;
+     flex-basis: 60%;
+     height: 10vh;
+     align-items: center;
+     justify-content: space-around;
+}
+.nav__link{
+     color: #000;
+     font-size: 20px;
+}
+.nav__link:hover{
+     color:rgb(138, 3, 21);
+}
+/*Banner*/
+.banner{
+     background: linear-gradient(to right, rgba(219, 204, 71, 0.411) 15%, rgba(235, 232, 232, 0.753)), url(../products/portada2.jpeg);
+     height: 85vh;
+     width: 100vw;
+     background-size:cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-attachment: fixed;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: #fff;
+}
+
+/*Banner__img*/
+.banner{
+     display: flex;
+     width: 100vw;
+}
+.eslogan{
+     flex-basis: 70%;
+     text-align: center;
+}
+.eslogan__title{
+     color: rgb(133, 13, 13);
+     font-size: 40px;
+     font-family: 'Dancing Script', cursive;
+     text-shadow: 6px 4px 5px rgba(203, 223, 203, 0.746);
+}
+.eslogan__description{
+     color: #000;
+     font-size: 25px;
+     text-shadow: 6px 4px 5px rgba(233, 240, 233, 0.746);
+}
+.banner__img{
+     flex-basis: 30%;
+}
+.avatar{
+     width: 100%;
+}
+
+/*cards*/
+.products-cards{
+     width: 95vw;
+     margin: auto auto;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+}
+
+@media screen and (min-width: 450px) {
+     .products-cards{
+          flex-direction: row;
+          justify-content: space-around;
+     }
+     .product-cards__item{
+          flex: 0 1 calc(50% - 1rem);
+     }
+}
+@media screen and (min-width: 760px) {
+     .products-cards{
+          flex-direction: row;
+          justify-content: space-around;
+     }
+     .product-cards__item{
+          flex: 0 1 calc(25% - 1rem);
+     }
+}
+
+.product__section{
+     text-align: center;
+     margin: 40px 0;
+     font-size: 40px;
+}
+.product__img{
+     width: 100%;
+     display: block;
+     border-radius: 8px 8px 0 0;
+}
+.product-cards__img{
+     position: relative;
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+}
+.dscto{
+     display: block;
+     background: rgb(202, 15, 15);
+     position: absolute;
+     bottom: -100%;
+     width: 50px;
+     height: 50px;
+     text-align: center;
+     color: #fff;
+     font-size: 20px;
+     transition: all ease .3s;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.product-cards__img:hover .dscto{
+     bottom: 50%;
+     transition: all ease .6s;
+}
+.products-cards__title{
+     text-align: center;
+     font-family: 'Open Sans Condensed', sans-serif;
+     font-size: 25px;
+     letter-spacing: 3px;
+     color: rgba(110, 63, 0, 0.863);
+     font-weight: bold;
+}
+.products-cards__description{
+     font-size: 20px;
+     font-family: 'Indie Flower', cursive;
+     text-align: center;
+     color: rgb(192, 92, 34);
+}
+
+.btn{
+     display: inline-block;
+     padding: 5px 15px;
+     background: rgb(28, 96, 221);
+     border-radius: 5px;
+     transition: all ease .2s;
+}
+.btn:hover{
+     transition: all ease .2s;
+     background: rgba(167, 93, 23, 0.61);
+     color: #000;
+}
+.product-cards__buttons{
+     margin-top: 5px;
+     text-align: center;
+}
+.btn-comprar{
+     background: rgb(187, 54, 13);
+     margin-right: 3px;
+}
+.btn-leer{
+     background: rgba(187, 54, 13, 0.781);
+}
+
+.history{
+     background: linear-gradient(to right, rgba(10, 10, 10, 0.411) 15%, rgba(42, 42, 42, 0.753)), url(../products/tienda.jpg);
+     height: 70vh;
+     width: 100vw;
+     background-size:cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-attachment: fixed;
+     margin-top: 30px;
+     display: flex;
+     flex-direction: column;
+     align-items:center;
+     justify-content: center;
+    
+}
+.history__title{
+     font-family: 'Dancing Script', cursive;
+     font-size: 70px;
+     color: rgba(255, 255, 255, 0.822);
+}
+.history__frase{
+     font-family: 'Indie Flower', cursive;
+     font-size: 25px;
+     color: #fff;
+     text-shadow: 6px 4px 5px rgba(152, 228, 152, 0.746);
+}
+.history__brief{
+     color: rgb(238, 165, 165);
+     font-size: 20px;
+     letter-spacing: 2px;
+     text-align: center;
+     width: 50%;
+     margin-bottom: 20px;
+}
